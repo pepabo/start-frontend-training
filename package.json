@@ -7,8 +7,8 @@
   },
   "author": "GMO Pepabo Inc.",
   "dependencies": {
-    "commander": "^2.20.0",
-    "fs-extra": "^8.1.0",
-    "tempy": "^0.3.0"
+    "commander": "^7.2.0",
+    "fs-extra": "^10.0.0",
+    "tempy": "^1.0.1"
   }
 }
