@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const childProcess = require('child_process')
-const program = require('commander')
+const { program } = require('commander')
 const fs = require('fs-extra')
 const path = require('path')
 const tempy = require('tempy')
@@ -30,7 +30,7 @@ if (fs.existsSync(destdir)) {
 console.log(`copying project skeleton to ${destdir}`)
 fs.copySync(path.join(tempdir, 'skeleton'), destdir)
 
-if (program.app) {
+if (program.opts().app) {
   console.log('appending sample application')
   fs.copySync(path.join(tempdir, 'app_start'), path.join(destdir, 'sample_app'))
 }
